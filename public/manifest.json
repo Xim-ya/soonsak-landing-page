@@ -1,0 +1,23 @@
+{
+  "name": "순삭 - 영화, 드라마 요약 리뷰 모아보기",
+  "short_name": "순삭",
+  "description": "2시간짜리 영화, 결말까지 20분만에. 유튜브 영화·드라마 리뷰 영상을 한 곳에서 모아보세요.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#10b981",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["entertainment", "video"]
+}
