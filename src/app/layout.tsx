@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { FirebaseAnalytics } from "@/components/analytics/FirebaseAnalytics";
 import "./globals.css";
 
 const SITE_NAME = "순삭";
@@ -130,6 +131,7 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body className="font-pretendard antialiased">
+        <FirebaseAnalytics />
         {children}
       </body>
     </html>
