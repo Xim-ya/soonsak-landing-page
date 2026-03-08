@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
-import splashLogo from "../../../public/splash_logo.json";
+import splashLogo from "@/assets/lottie/splash_logo.json";
 import { AppStoreIcon, PlayStoreIcon } from "@/components/icons/StoreIcons";
 import { useTypingAnimation } from "@/hooks/useTypingAnimation";
 import {
