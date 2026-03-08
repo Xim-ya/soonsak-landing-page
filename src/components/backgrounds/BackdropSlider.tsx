@@ -123,8 +123,14 @@ function EdgeFades() {
       <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/80 to-transparent" />
 
       {/* Left/right fades */}
-      <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black to-transparent" />
-      <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black to-transparent" />
+      <div
+        className="absolute inset-y-0 left-0 w-12 md:w-24"
+        style={{ background: "linear-gradient(to right, black 0%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.3) 60%, transparent 100%)" }}
+      />
+      <div
+        className="absolute inset-y-0 right-0 w-12 md:w-24"
+        style={{ background: "linear-gradient(to left, black 0%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.3) 60%, transparent 100%)" }}
+      />
     </>
   );
 }
