@@ -71,7 +71,7 @@ interface MovieCardProps {
 
 function MovieCard({ movie }: MovieCardProps) {
   return (
-    <div className="relative h-[120px] w-[213px] flex-shrink-0 overflow-hidden rounded-lg md:h-[150px] md:w-[267px]">
+    <div className="relative h-[138px] w-[245px] flex-shrink-0 overflow-hidden rounded-lg md:h-[173px] md:w-[307px]">
       {/* Backdrop image */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -89,7 +89,7 @@ function MovieCard({ movie }: MovieCardProps) {
         <img
           src={`${TMDB_LOGO_BASE}${movie.logo_path}`}
           alt={`${movie.title} logo`}
-          className="h-auto max-h-[35px] w-auto max-w-[140px] object-contain drop-shadow-lg md:max-h-[45px] md:max-w-[180px]"
+          className="h-auto max-h-[40px] w-auto max-w-[161px] object-contain drop-shadow-lg md:max-h-[52px] md:max-w-[207px]"
         />
       </div>
     </div>

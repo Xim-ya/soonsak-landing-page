@@ -4,9 +4,8 @@ import { FirebaseAnalytics } from "@/components/analytics/FirebaseAnalytics";
 import "./globals.css";
 
 const SITE_NAME = "순삭";
-const SITE_URL = "https://www.soonsak.co.kr";
-const SITE_DESCRIPTION =
-  "2시간짜리 영화, 결말까지 20분만에. 유튜브 영화·드라마 리뷰 영상을 한 곳에서 모아보세요. 영화 요약, 드라마 요약, 결말 포함 리뷰를 OTT처럼 깔끔하게.";
+const SITE_URL = "https://soonsak.co.kr";
+const SITE_DESCRIPTION = "유튜브 영화 드라마 요약·리뷰, 한 곳에서 순삭";
 
 export const viewport: Viewport = {
   width: "device-width",
