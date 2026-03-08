@@ -136,13 +136,12 @@ export const metadata: Metadata = {
     title: SITE_NAME,
   },
 
-  // Verification (placeholder - update with actual IDs)
-  // verification: {
-  //   google: "google-site-verification-id",
-  //   other: {
-  //     "naver-site-verification": "naver-verification-id",
-  //   },
-  // },
+  // Verification
+  verification: {
+    other: {
+      "naver-site-verification": "fd9295881c674c0d0f156f447068f128556b67f6",
+    },
+  },
 
   // Alternates
   alternates: {
