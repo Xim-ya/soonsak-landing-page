@@ -66,9 +66,9 @@ export function JsonLd() {
         url: "https://www.soonsak.co.kr",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.soonsak.co.kr/logo.svg",
-          width: 200,
-          height: 200,
+          url: "https://www.soonsak.co.kr/icon-512.png",
+          width: 512,
+          height: 512,
         },
         sameAs: [],
       },
