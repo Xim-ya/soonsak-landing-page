@@ -51,13 +51,13 @@ export function HeroContent({ className = "" }: HeroContentProps) {
         className="mb-6 flex flex-col items-center gap-1"
       >
         <TypingDisplay displayText={displayText} placeholder={LONGEST_TEXT} />
-        <div className="text-xl font-medium text-gray-300 md:text-2xl">
+        <div className="text-2xl font-medium text-gray-300 md:text-3xl">
           결말까지 <span className="font-bold text-[#19D67D]">20분</span>만에
         </div>
       </motion.div>
 
       {/* Logo */}
-      <div className="mb-4 w-[80px] md:w-[100px]">
+      <div className="mb-4 w-[100px] md:w-[120px]">
         <Lottie
           animationData={splashLogo}
           loop={false}
@@ -73,10 +73,10 @@ export function HeroContent({ className = "" }: HeroContentProps) {
           duration: ANIMATION_DURATION.normal,
           delay: ANIMATION_DURATION.normal,
         }}
-        className="mb-10 max-w-sm text-sm text-gray-500 md:text-base text-center"
+        className="mb-10 max-w-sm text-base text-gray-500 md:text-lg text-center"
       >
         <span className="flex items-center justify-center gap-1">
-          <YouTubeIcon className="size-2.5 md:size-3" />
+          <YouTubeIcon className="size-3 md:size-4" />
           <span>유튜브 영화 드라마 요약·리뷰</span>
         </span>
         <span>한 곳에서 순삭</span>
@@ -93,18 +93,18 @@ export function HeroContent({ className = "" }: HeroContentProps) {
       >
         <div className="flex gap-2 md:gap-3">
           <StoreButton
-            icon={<AppStoreIcon className="size-4 md:size-5" />}
+            icon={<AppStoreIcon className="size-5 md:size-6" />}
             label="App Store"
             onClick={showComingSoonAlert}
           />
           <StoreButton
-            icon={<PlayStoreIcon className="size-4 md:size-5" />}
+            icon={<PlayStoreIcon className="size-5 md:size-6" />}
             label="Google Play"
             onClick={openInNewTab(PLAY_STORE_URL)}
             primary
           />
         </div>
-        <p className="text-xs text-gray-500">지금 바로 순삭하기</p>
+        <p className="text-sm text-gray-500">지금 바로 순삭하기</p>
       </motion.div>
     </div>
   );
@@ -117,7 +117,7 @@ interface TypingDisplayProps {
 
 function TypingDisplay({ displayText, placeholder }: TypingDisplayProps) {
   return (
-    <div className="relative whitespace-nowrap text-xl font-medium text-white md:text-2xl">
+    <div className="relative whitespace-nowrap text-2xl font-medium text-white md:text-3xl">
       {/* Invisible placeholder to maintain width */}
       <span className="invisible">{placeholder}</span>
       {/* Actual text + cursor */}
@@ -125,7 +125,7 @@ function TypingDisplay({ displayText, placeholder }: TypingDisplayProps) {
         <span className="font-bold text-[#19D67D]">{displayText}</span>
         <motion.span
           {...CURSOR_BLINK}
-          className="inline-block h-6 w-[2px] bg-[#19D67D]"
+          className="inline-block h-7 w-[2px] bg-[#19D67D]"
         />
       </span>
     </div>
@@ -159,7 +159,7 @@ function StoreButton({ icon, label, onClick, primary = false }: StoreButtonProps
       <div className={primary ? "text-[#19D67D]" : "text-white"}>
         {icon}
       </div>
-      <span className={`text-xs md:text-sm font-semibold ${primary ? "text-[#19D67D]" : "text-white"}`}>
+      <span className={`text-sm md:text-base font-semibold ${primary ? "text-[#19D67D]" : "text-white"}`}>
         {label}
       </span>
     </motion.button>
