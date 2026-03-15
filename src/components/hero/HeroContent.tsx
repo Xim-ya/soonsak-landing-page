@@ -30,15 +30,12 @@ const TYPING_TEXTS = [
 const LONGEST_TEXT = "출퇴근길에 드라마";
 
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.soonsak.app&hl=ko";
+const APP_STORE_URL = "https://apps.apple.com/kr/app/%EC%88%9C%EC%82%AD-%EC%98%81%ED%99%94-%EB%93%9C%EB%9D%BC%EB%A7%88-%EC%9A%94%EC%95%BD-%EB%A6%AC%EB%B7%B0-%EC%BD%98%ED%85%90%EC%B8%A0/id6758769228";
 
 export function HeroContent({ className = "" }: HeroContentProps) {
   const { displayText } = useTypingAnimation({ texts: TYPING_TEXTS });
 
   const openInNewTab = (url: string) => () => window.open(url, "_blank");
-
-  const showComingSoonAlert = () => {
-    alert("아직 서비스 준비중이에요.\n조금만 기다려 주세요!");
-  };
 
   return (
     <div
@@ -95,7 +92,7 @@ export function HeroContent({ className = "" }: HeroContentProps) {
           <StoreButton
             icon={<AppStoreIcon className="size-5 md:size-6" />}
             label="App Store"
-            onClick={showComingSoonAlert}
+            onClick={openInNewTab(APP_STORE_URL)}
           />
           <StoreButton
             icon={<PlayStoreIcon className="size-5 md:size-6" />}
